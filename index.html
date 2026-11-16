@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>蘑菇大人的小站</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #faf6ee;
+    color: #3a3a2e;
+    line-height: 1.7;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px 60px; }
+  header { text-align: center; padding: 56px 0 28px; }
+  header svg { width: 96px; height: 96px; }
+  h1 { font-size: 30px; color: #2f5233; margin-top: 12px; letter-spacing: 2px; }
+  .sub { color: #8a8a72; font-size: 15px; margin-top: 6px; }
+  section { margin-top: 36px; }
+  h2 { font-size: 19px; color: #2f5233; margin-bottom: 14px; }
+  h2 span { color: #e2574c; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .card {
+    background: #fff;
+    border: 1px solid #eadfce;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 2px 8px rgba(90, 70, 40, .06);
+  }
+  .card svg { width: 44px; height: 44px; display: block; margin-bottom: 8px; }
+  .card h3 { font-size: 16px; color: #2f5233; }
+  .card p { font-size: 14px; color: #6d6d58; margin-top: 4px; }
+  .facts { background: #fff; border: 1px solid #eadfce; border-radius: 16px; padding: 20px 22px; box-shadow: 0 2px 8px rgba(90, 70, 40, .06); }
+  .facts li { font-size: 15px; margin: 10px 0 10px 20px; }
+  .facts li::marker { color: #e2574c; }
+  .links { display: flex; gap: 12px; flex-wrap: wrap; }
+  .links a {
+    display: inline-block;
+    background: #2f5233;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 999px;
+  }
+  .links a.ghost { background: #fff; color: #2f5233; border: 1px solid #2f5233; }
+  footer { text-align: center; color: #a8a890; font-size: 13px; margin-top: 48px; }
+  @media (max-width: 520px) { .cards { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg viewBox="0 0 100 100" aria-label="蘑菇">
+      <path d="M50 52 C30 52 14 66 12 84 L88 84 C86 66 70 52 50 52Z" fill="#f4ead8"/>
+      <path d="M50 8 C24 8 6 28 6 50 C6 54 9 56 13 56 L87 56 C91 56 94 54 94 50 C94 28 76 8 50 8Z" fill="#e2574c"/>
+      <circle cx="34" cy="30" r="7" fill="#fff"/>
+      <circle cx="58" cy="20" r="5" fill="#fff"/>
+      <circle cx="70" cy="38" r="6" fill="#fff"/>
+      <circle cx="46" cy="42" r="4" fill="#fff"/>
+    </svg>
+    <h1>蘑菇大人的小站</h1>
+    <p class="sub">这里住着一群蘑菇，慢慢长。</p>
+  </header>
+
+  <section>
+    <h2><span>🍄</span> 蘑菇居民</h2>
+    <div class="cards">
+      <div class="card">
+        <svg viewBox="0 0 100 100"><path d="M50 52 C30 52 14 66 12 84 L88 84 C86 66 70 52 50 52Z" fill="#f4ead8"/><path d="M50 8 C24 8 6 28 6 50 C6 54 9 56 13 56 L87 56 C91 56 94 54 94 50 C94 28 76 8 50 8Z" fill="#e2574c"/><circle cx="34" cy="30" r="7" fill="#fff"/><circle cx="62" cy="24" r="5" fill="#fff"/><circle cx="70" cy="40" r="6" fill="#fff"/></svg>
+        <h3>毒蝇伞</h3>
+        <p>红伞白点，童话里的标准蘑菇。好看，有毒，只能看不能吃。</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 100 100"><path d="M50 52 C30 52 14 66 12 84 L88 84 C86 66 70 52 50 52Z" fill="#f4ead8"/><path d="M50 8 C24 8 6 28 6 50 C6 54 9 56 13 56 L87 56 C91 56 94 54 94 50 C94 28 76 8 50 8Z" fill="#b08954"/><circle cx="36" cy="32" r="6" fill="#fff"/><circle cx="64" cy="26" r="5" fill="#fff"/></svg>
+        <h3>香菇</h3>
+        <p>最常见的食用菌，炖汤、炒菜都香。伞盖厚实，越嚼越有味。</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 100 100"><path d="M50 52 C30 52 14 66 12 84 L88 84 C86 66 70 52 50 52Z" fill="#f4ead8"/><path d="M50 8 C24 8 6 28 6 50 C6 54 9 56 13 56 L87 56 C91 56 94 54 94 50 C94 28 76 8 50 8Z" fill="#e8c96a"/><circle cx="38" cy="30" r="6" fill="#fff"/><circle cx="66" cy="36" r="5" fill="#fff"/></svg>
+        <h3>金针菇</h3>
+        <p>细细长长一小把，火锅里的常客。脆嫩爽口，涮几秒就好。</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 100 100"><path d="M50 52 C30 52 14 66 12 84 L88 84 C86 66 70 52 50 52Z" fill="#f4ead8"/><path d="M50 8 C24 8 6 28 6 50 C6 54 9 56 13 56 L87 56 C91 56 94 54 94 50 C94 28 76 8 50 8Z" fill="#7ba05b"/><circle cx="34" cy="28" r="6" fill="#fff"/><circle cx="60" cy="22" r="5" fill="#fff"/><circle cx="70" cy="38" r="5" fill="#fff"/></svg>
+        <h3>平菇</h3>
+        <p>伞盖像一把小扇子，味道清淡，怎么做都不抢味。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>✦</span> 蘑菇小知识</h2>
+    <ul class="facts">
+      <li>蘑菇不是植物，也不是动物，它是真菌——和动物的亲缘其实比和植物更近。</li>
+      <li>世界上最大的生物之一是一株蜜环菌，在地下长了近 10 平方公里。</li>
+      <li>有些蘑菇会发光，比如荧光小菇，夜里能在林子里亮起淡淡的绿光。</li>
+      <li>蘑菇靠孢子繁殖，一朵蘑菇一生能释放数十亿粒孢子，随风去找新的家。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span>✦</span> 我的角落</h2>
+    <div class="links">
+      <a href="https://garden.qsxy.uw.to/">🍄 蘑菇花园</a>
+      <a class="ghost" href="https://github.com/erikka4052">GitHub</a>
+    </div>
+  </section>
+
+  <footer>种在 GitHub Pages 上的一朵小蘑菇 · 蘑菇大人</footer>
+</div>
+</body>
+</html>
